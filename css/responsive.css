@@ -1,0 +1,237 @@
+
+/* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+   
+   /*header-top start here*/
+    .header-content li {
+        padding: 0px 13px;  
+    }
+
+    /*navigation start here*/
+    .navbar-brand img{
+        width: 180px;
+    }
+    .navbar-nav{
+        align-items: center;
+    }
+    .nav-link{
+        padding: 15px 0px !important;
+        border-bottom: 1px solid var(--primary);
+    }
+    .navbar-nav li:last-child .nav-link{
+        border-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    } 
+
+    /*Slider*/
+    .slider-items{
+        height: 300px;
+    }
+    .owl-carousel .owl-item img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .slider-content {
+        width: 90%;
+    }
+    .slider-content h1 {
+        font-size: 17px;
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+    .slider-content p{
+        width: 100%;
+    } 
+    .owl-nav{
+        display: none;
+    }   
+      
+   /*Service Start Here*/
+   .service-item p{
+       font-size: 12px;
+       line-height: 22px;
+   }
+
+   /* Counter Start Here */
+   .counter-item h6 {
+    margin-bottom: 25px;
+    } 
+
+
+    /* Button Start Here */
+   .button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    }
+
+
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /*header-top start here*/
+    .header-content li {
+        padding: 0px 13px;
+    }
+
+    /*navigation start here*/
+    .navbar-brand img {
+        width: 180px;
+    }
+    .navbar-nav{
+        align-items: center;
+    }
+    .nav-link{
+        padding: 15px 0px !important;
+        border-bottom: 1px solid var(--primary);
+    }
+    .navbar-nav li:last-child .nav-link{
+        border-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /*Slider*/
+    .slider-items{
+        height: 400px;
+    }
+    .owl-carousel .owl-item img {
+        height: 400px;
+        object-fit: cover;
+    }
+    .slider-content {
+        width: 90%;
+    }
+    .slider-content h1 {
+        font-size: 30px;
+    }
+    .slider-content p{
+        width: 100%;
+    } 
+    .owl-nav{
+        display: none;
+    }
+
+    /* Counter Start Here */
+    .counter-item h6 {
+        margin-bottom: 25px;
+    } 
+   
+
+
+    /* Button Start Here */
+    .button-wrapper {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+      
+}
+ 
+/* Medium devices (tablets, less than 992px) */
+@media  (min-width: 768px) and (max-width: 991.98px) {
+      
+    /*header-top start here*/
+    .header-content li {
+        padding: 0px 13px; 
+    }
+    
+    /*navigation start here*/
+    .navbar-nav{
+        align-items: center;
+    }
+    .nav-link{
+        padding: 15px 0px !important;
+        border-bottom: 1px solid var(--primary);
+    }
+    .navbar-nav li:last-child .nav-link{
+        border-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /*Slider*/
+    .slider-content {
+        width: 70%;
+    }
+    .slider-content h1 {
+        font-size: 30px;
+    }
+    .slider-content p{
+        width: 100%;
+    } 
+    .owl-prev i, .owl-next i {
+        font-size: 30px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    } 
+
+    /* Counter Start Here */
+    .counter-item h6 {
+        margin-bottom: 30px;
+    } 
+    /* Slick Slider Recent */
+    .arrow-prev i {
+        right: 4%;
+    }
+      
+   
+    
+
+    /* Button Start Here */
+    .button-wrapper {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+      
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /*Slider*/
+    .slider-content {
+        width: 70%;
+    }
+    .slider-content h1 {
+        font-size: 40px;
+    }
+    .slider-content p{
+        width: 80%;
+    } 
+    .owl-prev i, .owl-next i {
+        font-size: 30px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    } 
+
+    /* Counter Star Here */
+    .counter-item h6 { 
+        font-size: 23px;
+    }
+  /* Slick Slider Recent */
+  .arrow-prev i {
+    right: 3%;
+}
+        
+     
+  
+
+
+      
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+ 
+      
+}
+
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */

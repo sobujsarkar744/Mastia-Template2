@@ -1,0 +1,580 @@
+/* ===========================================================
+Template Name: MASTIA || HTML Responsive Template;
+Authore: Md.Sobuj Sarkar;
+Version: 3.1.1;
+Created: 5  June 2021;
+File Description: Main CSS file of the template;
+============================================================== */
+/* ===========================================================
+              Variables
+============================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Play:wght@400;700&family=Raleway:wght@400;600;700&display=swap');
+:root{
+    --primary:#353535;
+    --secondary:#22a7f0;
+    --text:#353535;
+    --white:#ffffff;
+    --primary_fonts: 'Play', sans-serif;
+    --secondary_fonts: 'Open Sans', sans-serif;
+    --heading_fonts: 'Raleway', sans-serif;
+    --title_font_size:35px;
+    --subtitle_font_size:24px;
+    --text_font_size:14px;
+}
+body{
+    font-family: var(--secondary_fonts);
+    font-size: var(--text_font_size)!important;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;  
+}
+h1,
+h2,h3,
+h4,h5,h6{
+    font-family: var(--primary_fonts);
+    color: var(--secondary);
+    margin: 0;
+}
+h1{
+    font-family: var(--heading_fonts);
+}
+h2{
+    font-size: var(--title_font_size);
+    line-height: 45px;
+    font-weight: 400;
+}
+h4{ 
+    font-size: var(--subtitle_font_size);
+    line-height: 34px;
+    font-weight: 400;
+}
+p{
+    font-family: var(--secondary_fonts);
+    font-size: var(--text_font_size);
+    color: var(--text);
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+a{
+    font-family: var(--primary_fonts);
+    font-size: var(--text_font_size);
+    color: var(--text);
+    line-height: 24px;
+    font-weight: 400;  
+}
+button:focus:not(:focus-visible) {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+/* ===========================================================
+                Header Style Start Here
+============================================================== */
+.header-top{
+    padding: 20px 0px;
+    box-shadow: 0px -6px 12px 0px #000;
+}
+.header-content li{
+    font-family: var(--secondary_fonts);
+    font-size: var(--text_font_size);
+    font-weight: 400;
+    color: var(--text);
+    padding: 0 20px;
+    margin: 0 !important;
+}
+.header-content li:last-child{
+    padding: 0;
+}
+.header-content .header-top-icon{
+    margin-right: 10px;
+}
+
+
+/*Navigation Menu Start Here*/
+.navbar{
+    padding: 20px 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-family: var(--secondary_fonts);
+    font-size: var(--text_font_size);
+    font-weight: 700;
+    color: var(--text);
+    padding:0px 25px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--secondary);
+}
+.navbar-light .navbar-nav li:last-child .nav-link {
+    padding-right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color:var(--secondary);
+}
+.navbar-light .navbar-toggler {
+    color: var(--primary);
+    border-color:var(--primary);
+}
+.navbar-light .navbar-toggler:hover{
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+/* ===========================================================
+                Slider Style Start Here
+============================================================== */
+.slider-items{
+    position: relative;
+}
+.slider-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+}
+.slider-items::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+}
+.slider-items img{
+    width: 100%;
+}
+.slider-content h1{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: auto;
+}
+.slider-content p{
+   color: var(--white);
+   width: 65%;
+   margin: auto;
+}
+.slider-content a{
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 15px 35px;
+    border: 1px solid var(--white);
+    border-radius: 0;
+    margin-top: 30px;
+    transition: .5s;
+}
+.slider-content a:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-color: var(--primary);
+    letter-spacing: 3px;}
+
+.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+}
+.owl-next{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-5%, -50%);
+}
+.owl-prev i, .owl-next i{
+    color: var(--white);
+    font-size: 40px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border: 1px solid var(--white);
+    transition: .5s;
+    border-radius: 0;
+} 
+.owl-prev i:hover, .owl-next i:hover{
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+/* ===========================================================
+                  Service Style Start Here
+============================================================== */
+#service{
+    padding: 80px 0px;
+    background-color: #f8f8f8;
+}
+.service-item{
+    margin-bottom: 30px;
+}
+.service-item i{
+    font-size: 50px;
+    color: #4b4b4b;
+    margin-bottom: 15px;
+}
+.service-item h4{
+    text-transform: uppercase;
+}
+/* ===========================================================
+                  Projects Start Here
+============================================================== */
+#projects{
+    padding: 80px 0px;
+}
+.heading h2{
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px 0px;
+   
+}
+.heading h2::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background-color: var(--secondary);
+    bottom: 0;
+    left: 0;
+}
+.projects-item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.projects-item{
+    position: relative;
+    margin: 0px 10px;
+}
+.projects-item:hover .projects-icon i{
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.projects-item:hover::before{
+    opacity: 1;
+    width: 100%;
+}
+.projects-item::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: var(--secondary);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .4s;
+}
+.projects-icon i{
+    font-size: 35px;
+    color: var(--white);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    opacity: 0;
+    transition: .6s;
+}
+.slick-arrow{
+    display: none;
+}
+.slick-arrow{
+    background-color: transparent;
+    border: none;
+}
+.arrow-next i {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--secondary);
+    background-color:var(--secondary);
+    line-height: 20px;
+    text-align: center;
+    right: 0;
+    bottom: -15%;
+}
+.arrow-prev i {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--secondary);
+    background-color:var(--secondary);
+    line-height: 20px;
+    text-align: center;
+    z-index: 1;
+    right: 2%;
+    bottom: -15%;
+}
+
+
+
+
+
+
+/* ===========================================================
+                  Counter Up Start Here
+============================================================== */
+#counter{
+    padding: 60px 0px;
+    background-image: url(../images/counter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.overlay::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .6;
+}
+.counter-item span{
+    font-family: var(--primary_fonts);
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--white);
+    position: relative;
+    padding: 5px 0px;
+}
+.counter-item span::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    background-color: var(--white);
+    bottom: -15%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 15%);
+        -ms-transform: translate(-50%, 15%);
+            transform: translate(-50%, 15%);
+}
+.counter-item h6{
+    font-family: var(--primary_fonts);
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--white);
+    text-transform: uppercase;
+    /* margin-top: 25px; */
+    padding-top: 25px;
+}
+/* ===========================================================
+                  Counter Up Start Here
+============================================================== */
+/* ===========================================================
+                  Blog Start Here
+============================================================== */
+#from-blog{
+    padding: 60px 0px;
+    background-color: var(--white);
+}
+.blog-img{
+    position: relative;
+}
+.blog-img::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: var(--secondary);
+    opacity: 0;
+    transition: .5s;
+}
+.blog-img:hover::before{
+    opacity: .7;
+    width: 100%;
+}
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-content {
+    margin: 0px 20px;
+}
+.blog-text p{
+    padding-top: 20px;
+}
+.blog-button .btn{
+    font-family: var(--secondary_fonts);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--secondary);
+    background-color: transparent;
+    text-transform: uppercase;
+    height: 50px;
+    width: 170px;
+    border-radius: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    padding-top: 30px;
+}
+
+.slick-arrow{
+    display: none;
+}
+.slick-arrow{
+    background-color: transparent;
+    border: none;
+}
+.arrow-next1 i {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--secondary);
+    background-color:var(--secondary);
+    line-height: 20px;
+    text-align: center;
+    right: 0;
+    bottom: -15%;
+}
+.arrow-prev1 i {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 1px solid var(--secondary);
+    background-color:var(--secondary);
+    line-height: 20px;
+    text-align: center;
+    z-index: 1;
+    right: 2%;
+    bottom: -15%;
+}
+
+
+
+
+/* ===========================================================
+                  Button Style Start Here
+============================================================== */
+#button{
+    padding: 50px 0px;
+    background-color: var(--secondary);
+}
+.button-content h4{
+    color: var(--white);
+    margin: 0;
+}
+.button-wrapper{
+    text-align: right;
+}
+.button-wrapper .btn{
+    font-family: var(--primary_fonts);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    text-transform: uppercase;
+    height: 50px;
+    width: 170px;
+    border: 2px solid var(--white);
+    border-radius: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.button-wrapper .btn:hover{
+    background-color:var(--white);
+    letter-spacing: 2px;
+    color: var(--primary);
+    border: 2px solid var(--white);
+
+}
+
+
+
+/* ===========================================================
+                  Footer Style Start Here
+============================================================== */
+footer{
+    padding: 60px 0px ;
+    background-color: #161616;
+}
+.footer-heading h4{
+    font-family: var(--primary_fonts);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.footer-content p{
+    color: var(--white);
+}
+.footer-icon-text ul{
+    padding-left: 0;
+}
+.footer-icon-text ul li{
+    list-style: none;
+}
+.footer-icon-text{
+    padding: 5px 0px;
+}
+.footer-icon-text i{
+    font-size: var(--text_font_size);
+    color: var(--secondary);
+
+}
+.footer-icon-text span{
+    font-family: var(--secondary_fonts);
+    font-size: var(--text_font_size);
+    font-weight: 400;
+    color: var(--white);
+    padding-left:6px ;
+}
+.footer-content-icon p{
+    color: var(--white);
+}
+.footer-content-icon ul{
+    padding-left: 0;
+}
+.footer-content-icon ul li{
+    list-style: none;
+}
+.footer-content-icon i{
+    font-size: var(--text_font_size);
+    color: var(--secondary);
+}
+.footer-content-icon span{
+    font-family: var(--secondary_fonts);
+    font-size: var(--text_font_size);
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--white);
+    padding-left:10px ; 
+}
+
+
+
+/* ===========================================================
+                  Footer Bottom Style Start Here
+============================================================== */
+#footer-bottom{
+    padding: 35px 0px;
+    background-color: #000000;
+}
+.footer-bottom-content span{
+    color: #ff0000;
+}
+.footer-bottom-content p{
+    font-family: var(--secondary_fonts);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--white);
+    margin: 0;
+}
